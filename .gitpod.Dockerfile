@@ -13,7 +13,8 @@ RUN sudo apt-get update && \
 RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 RUN sudo apt-add-repository -u https://cli.github.com/packages
 RUN sudo apt install gh
-RUN sudo apt update && sudo apt install android-sdk
+RUN sudo apt update
+RUN sudo apt install android-sdk
 
 # set the zsh theme 
 ENV ZSH_THEME cloud
